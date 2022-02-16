@@ -7,44 +7,57 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
+    @ObservedObject var carStore: CarStore = CarStore(cars: carData)
     var body: some View {
-        VStack {
-            MapView()
-                .ignoresSafeArea(edges: .top)
-                .frame(height: 300)
-            
-            CircleImage()
-                .offset(y: -130)
-                .padding(.bottom, -130)
-            
-            VStack(alignment: .leading) {
-                Text("Turtle Rock")
-                    .font(.title)
-                HStack {
-                    Text("Joshua Tree National Park")
-                    
-                    Spacer()
-                    Text("California")
+        NavigationView {
+            List {
+                ForEach(carStore.cars) { car in
+                    CarInformationCell(car: car)
                 }
-                .font(.subheadline)
-                .foregroundColor(.secondary)
-                
-                Divider() // 구분선
-                
-                Text("About Turtle Rock")
-                    .font(.title2)
-                Text("Descriptive text goes here")
+                .onDelete(perform: deleteItem)
+                .onMove(perform: moveItem)
             }
-            .padding()
-            
-            Spacer()
+            .navigationTitle(Text("EV Cars"))
+            .navigationBarItems(leading: NavigationLink(destination: AddNewCar(carStore: carStore)) {
+                Text("Add")
+                    .foregroundColor(.blue)
+            }, trailing: EditButton())
+        }
+
+    }
+    func moveItem(from source: IndexSet, to destination: Int) {
+        carStore.cars.move(fromOffsets: source, toOffset: destination)
+    }
+    // 각 Row(cell)가 삭제될 때 호출되는 함수이다.
+    // 삭제 행동을 실행한 Row의 index가 전달되므로 IndexSet을 반드시 파라미터로 받아야 한다.
+    func deleteItem(at offsets: IndexSet) {
+        if let first = offsets.first {
+            carStore.cars.remove(at: first)
         }
     }
+    
+
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+struct CarInformationCell: View {
+    var car: Car
+    var body: some View {
+        NavigationLink(destination: CarDetail(selectedCar: car)) {
+            HStack {
+                Image(car.imageName)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 100, height: 60)
+                Text(car.name)
+            }
+        }
     }
 }

@@ -13,6 +13,13 @@
 		D4D622DB27BB8489006686CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4D622DA27BB8489006686CD /* Preview Assets.xcassets */; };
 		D4D622E227BB9978006686CD /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D622E127BB9978006686CD /* CircleImage.swift */; };
 		D4D622E427BBA03D006686CD /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D622E327BBA03D006686CD /* MapView.swift */; };
+		D4D622E827BCC0B9006686CD /* CarAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4D622E727BCC0B9006686CD /* CarAssets.xcassets */; };
+		D4D622EB27BCC0EF006686CD /* carData.json in Resources */ = {isa = PBXBuildFile; fileRef = D4D622EA27BCC0EF006686CD /* carData.json */; };
+		D4D622ED27BCC110006686CD /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D622EC27BCC110006686CD /* Car.swift */; };
+		D4D622EF27BCC170006686CD /* CarData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D622EE27BCC170006686CD /* CarData.swift */; };
+		D4D622F127BCC29A006686CD /* CarStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D622F027BCC29A006686CD /* CarStore.swift */; };
+		D4D622F327BCC510006686CD /* CarDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D622F227BCC510006686CD /* CarDetail.swift */; };
+		D4D622F527BCCBCF006686CD /* AddNewCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D622F427BCCBCF006686CD /* AddNewCar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +30,13 @@
 		D4D622DA27BB8489006686CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D4D622E127BB9978006686CD /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		D4D622E327BBA03D006686CD /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		D4D622E727BCC0B9006686CD /* CarAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CarAssets.xcassets; sourceTree = "<group>"; };
+		D4D622EA27BCC0EF006686CD /* carData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = carData.json; sourceTree = "<group>"; };
+		D4D622EC27BCC110006686CD /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		D4D622EE27BCC170006686CD /* CarData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarData.swift; sourceTree = "<group>"; };
+		D4D622F027BCC29A006686CD /* CarStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarStore.swift; sourceTree = "<group>"; };
+		D4D622F227BCC510006686CD /* CarDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetail.swift; sourceTree = "<group>"; };
+		D4D622F427BCCBCF006686CD /* AddNewCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +73,14 @@
 				D4D622D527BB8486006686CD /* ContentView.swift */,
 				D4D622E127BB9978006686CD /* CircleImage.swift */,
 				D4D622E327BBA03D006686CD /* MapView.swift */,
+				D4D622EC27BCC110006686CD /* Car.swift */,
+				D4D622EE27BCC170006686CD /* CarData.swift */,
+				D4D622F027BCC29A006686CD /* CarStore.swift */,
+				D4D622F227BCC510006686CD /* CarDetail.swift */,
+				D4D622F427BCCBCF006686CD /* AddNewCar.swift */,
+				D4D622E727BCC0B9006686CD /* CarAssets.xcassets */,
 				D4D622D727BB8489006686CD /* Assets.xcassets */,
+				D4D622E927BCC0EF006686CD /* CarData */,
 				D4D622D927BB8489006686CD /* Preview Content */,
 			);
 			path = Practice_SwiftUI;
@@ -71,6 +92,14 @@
 				D4D622DA27BB8489006686CD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D4D622E927BCC0EF006686CD /* CarData */ = {
+			isa = PBXGroup;
+			children = (
+				D4D622EA27BCC0EF006686CD /* carData.json */,
+			);
+			path = CarData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,8 +160,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4D622EB27BCC0EF006686CD /* carData.json in Resources */,
 				D4D622DB27BB8489006686CD /* Preview Assets.xcassets in Resources */,
 				D4D622D827BB8489006686CD /* Assets.xcassets in Resources */,
+				D4D622E827BCC0B9006686CD /* CarAssets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,8 +176,13 @@
 			files = (
 				D4D622D627BB8486006686CD /* ContentView.swift in Sources */,
 				D4D622E427BBA03D006686CD /* MapView.swift in Sources */,
+				D4D622EF27BCC170006686CD /* CarData.swift in Sources */,
+				D4D622F327BCC510006686CD /* CarDetail.swift in Sources */,
+				D4D622ED27BCC110006686CD /* Car.swift in Sources */,
 				D4D622D427BB8486006686CD /* Practice_SwiftUIApp.swift in Sources */,
 				D4D622E227BB9978006686CD /* CircleImage.swift in Sources */,
+				D4D622F527BCCBCF006686CD /* AddNewCar.swift in Sources */,
+				D4D622F127BCC29A006686CD /* CarStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
