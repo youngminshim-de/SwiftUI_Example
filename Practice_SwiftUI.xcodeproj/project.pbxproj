@@ -14,6 +14,7 @@
 		D4D622E227BB9978006686CD /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D622E127BB9978006686CD /* CircleImage.swift */; };
 		D4D622E427BBA03D006686CD /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D622E327BBA03D006686CD /* MapView.swift */; };
 		D4F5015A27D1ECC50048A2A9 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F5015927D1ECC50048A2A9 /* StackView.swift */; };
+		D4F5015C27D1FFD80048A2A9 /* ProgressViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F5015B27D1FFD80048A2A9 /* ProgressViewTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		D4D622E127BB9978006686CD /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		D4D622E327BBA03D006686CD /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		D4F5015927D1ECC50048A2A9 /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
+		D4F5015B27D1FFD80048A2A9 /* ProgressViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,11 +61,12 @@
 			children = (
 				D4D622D327BB8486006686CD /* Practice_SwiftUIApp.swift */,
 				D4D622D527BB8486006686CD /* ContentView.swift */,
+				D4F5015927D1ECC50048A2A9 /* StackView.swift */,
 				D4D622E127BB9978006686CD /* CircleImage.swift */,
 				D4D622E327BBA03D006686CD /* MapView.swift */,
 				D4D622D727BB8489006686CD /* Assets.xcassets */,
 				D4D622D927BB8489006686CD /* Preview Content */,
-				D4F5015927D1ECC50048A2A9 /* StackView.swift */,
+				D4F5015B27D1FFD80048A2A9 /* ProgressViewTest.swift */,
 			);
 			path = Practice_SwiftUI;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 				D4D622D427BB8486006686CD /* Practice_SwiftUIApp.swift in Sources */,
 				D4D622E227BB9978006686CD /* CircleImage.swift in Sources */,
 				D4F5015A27D1ECC50048A2A9 /* StackView.swift in Sources */,
+				D4F5015C27D1FFD80048A2A9 /* ProgressViewTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
