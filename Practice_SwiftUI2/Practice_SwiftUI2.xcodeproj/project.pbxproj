@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		14C807E85523A676A626C86E /* Pods_Practice_SwiftUI2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05E5E9093FEC81F601C46257 /* Pods_Practice_SwiftUI2.framework */; };
+		D43B05B527EA0322003CC7C2 /* testViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43B05B427EA0322003CC7C2 /* testViewModel.swift */; };
 		D4A0DD5127D6DEA500F109F9 /* Practice_SwiftUI2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A0DD5027D6DEA500F109F9 /* Practice_SwiftUI2App.swift */; };
 		D4A0DD5327D6DEA500F109F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A0DD5227D6DEA500F109F9 /* ContentView.swift */; };
 		D4A0DD5527D6DEA700F109F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4A0DD5427D6DEA700F109F9 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		05E5E9093FEC81F601C46257 /* Pods_Practice_SwiftUI2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Practice_SwiftUI2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9FEC42C739FCDFC81C978E5 /* Pods-Practice_SwiftUI2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Practice_SwiftUI2.debug.xcconfig"; path = "Target Support Files/Pods-Practice_SwiftUI2/Pods-Practice_SwiftUI2.debug.xcconfig"; sourceTree = "<group>"; };
+		D43B05B427EA0322003CC7C2 /* testViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testViewModel.swift; sourceTree = "<group>"; };
 		D4A0DD4D27D6DEA500F109F9 /* Practice_SwiftUI2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Practice_SwiftUI2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4A0DD5027D6DEA500F109F9 /* Practice_SwiftUI2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practice_SwiftUI2App.swift; sourceTree = "<group>"; };
 		D4A0DD5227D6DEA500F109F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				D4A0DD5027D6DEA500F109F9 /* Practice_SwiftUI2App.swift */,
 				D4A0DD5227D6DEA500F109F9 /* ContentView.swift */,
 				D4A0DD6C27D6F17500F109F9 /* UserViewModel.swift */,
+				D43B05B427EA0322003CC7C2 /* testViewModel.swift */,
 				D4A0DD6427D6EB2D00F109F9 /* UserModel.swift */,
 				D4A0DD5427D6DEA700F109F9 /* Assets.xcassets */,
 				D4A0DD5627D6DEA700F109F9 /* Preview Content */,
@@ -249,6 +252,7 @@
 			files = (
 				D4A0DD5327D6DEA500F109F9 /* ContentView.swift in Sources */,
 				D4A0DD6D27D6F17500F109F9 /* UserViewModel.swift in Sources */,
+				D43B05B527EA0322003CC7C2 /* testViewModel.swift in Sources */,
 				D4A0DD7227D6F54800F109F9 /* RandomUserView.swift in Sources */,
 				D4A0DD6F27D6F1E700F109F9 /* ProfileImageView.swift in Sources */,
 				D4A0DD5127D6DEA500F109F9 /* Practice_SwiftUI2App.swift in Sources */,

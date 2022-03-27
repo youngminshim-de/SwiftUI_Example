@@ -25,7 +25,7 @@ enum RandomUserRouter: URLRequestConvertible {
         return request
     }
     
-    case getUsers(page: Int = 1, results: Int = 20)
+    case getUsers(page: Int = 1, results: Int = 40)
     
     var baseURL: URL {
         return URL(string: BASE_URL)!

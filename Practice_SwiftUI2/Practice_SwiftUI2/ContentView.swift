@@ -44,6 +44,7 @@ struct ContentView: View {
                     fetchRandomUser(randomUser)
                 }
         }
+        
         .introspectTableView { self.configureRefreshControl($0) }
         
         if randomUserViewModel.isLoading {
